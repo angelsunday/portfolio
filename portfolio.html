@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio – Angelakis Kiriaki</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <h1>Kiriaki Angelakis</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="subtitle">Web Designer & Front-End Developer</p>
+  </header>
+
+  <main>
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>I am an IT Applications Technician specializing in Web Design & Development. 
+     I create clean, functional, and modern websites with a focus on user experience.</p>
+    </section>
+
+    <section id="projects" class="projects">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <div class="project">
+      <h3>Restaurant Landing Page</h3>
+      <p>Landing Page of a restaurant</p>
+      <a href="littleLemonRestaurant/index.html" class="btn">View</a>
+    </div>
+
+    <div class="project">
+      <h3>Product Page</h3>
+      <p>Sample of a product in a commerce website</p>
+      <a href="productPage/nikeProduct.html" class="btn">View</a>
+    </div>
+
+    <div class="project">
+      <h3>Rock Paper Scissors Game</h3>
+      <p>Just a game using JavaScript</p>
+      <a href="rockPaperScissors/rock-paper-scissors.html" class="btn">View</a>
+    </div>
+
+    <div class="project">
+      <h3>Space Shooter</h3>
+      <p>Another game using JavaScript</p>
+      <a href="SpaceShooter/SpaceshipOriginal.html" class="btn">View</a>
+    </div>
+
+    <div class="project">
+      <h3>To-Do List</h3>
+      <p>A simple To-do List</p>
+      <a href="toDoList/todo-list.html" class="btn">View</a>
+    </div>
+  </div>
+</section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>📧 <a href="mailto:angelakiskiriaki@gmail.com">angelakiskiriaki@gmail.com</a></p>
+      <p>📞 6947647981</p>
+
+      <form class="contact-form" action="https://formspree.io/f/your_form_id" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Το όνομά σας">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" required placeholder="Το email σας">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Το μήνυμά σας"></textarea>
+        </div>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Kiriaki Angelakis – All Rights Reserved</p>
+  </footer>
+</body>
+</html>
