@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Space Shooter</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: black;
+      color: white;
+      font-family: 'Arial', sans-serif;
+    }
+
+    canvas { background: black; display: block; margin: auto; }
+    #menu, #hud, #game-over {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: white;
+      margin-top: 20px;
+    }
+    #hud { display: none; }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    
+    #gameOver {
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      text-align: center;
+      color: red;
+      font-size: 48px;
+      font-family: "Comic Sans MS", sans-serif;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+    <div id="menu">
+      <h1>🚀 Welcome to Space Game</h1>
+      <button id="startBtn">Start Game</button>
+    </div>
+  
+    <canvas width="1000" height="600"></canvas>
+  
+    <div id="hud">
+      <span id="score">Score: 0</span> |
+      <span id="level">Level: 1</span> |
+      <span id="powerup">Power-up: None</span> |
+      <button id="pauseBtn">Pause</button>
+    </div>
+  
+    <script src="game.js"></script>
+  </body>
+  </html>
